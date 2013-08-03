@@ -1,0 +1,40 @@
+import bb.cascades 1.0
+
+Page {
+    Container {
+       Label {
+           text: "Invoke Music Application"
+           horizontalAlignment: HorizontalAlignment.Center
+           textFormat: Text
+       }
+        //Todo: fill me with QML
+        Button {
+            id: musicPlayerBtn
+            text: "Open Music Player"
+            onClicked: {
+                myApp.invokeMusicPlayer();
+            }
+        }
+        Button {
+            id: musicPlayAlbumsBtn
+            text: "Open Music Albums"
+            onClicked: {
+                myApp.invokeMusicAlbums();
+            }
+        }
+        Button {
+            id: musicArtistsBtn
+            text: "Open Music Playlists"
+            onClicked: {
+                myApp.invokeMusicArtists();
+            }
+        }
+        Button {
+            id: musicGenresBtn
+            text: "Open Music Genres"
+            onClicked: {
+                myApp.invokeMusicGenres();
+            }
+        }
+    }
+}
